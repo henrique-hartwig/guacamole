@@ -3,7 +3,7 @@ import type { MetaFunction } from "@remix-run/node";
 export const meta: MetaFunction = () => {
   return [
     { title: "Guacamole" },
-    { name: "description", content: "Guacamole" },
+    { name: "description", content: "Guacamole reminds me mexican food" },
   ];
 };
 
