@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
+import ExpenseForm from "~/components/expenses/ExpenseForm";
 
 
 export const meta: MetaFunction = () => {
@@ -8,6 +9,7 @@ export const meta: MetaFunction = () => {
   ];
 };
 
+
 export default function ExpensesAdd() {
-  return <div>expenses add</div>;
+  return <ExpenseForm />;
 }

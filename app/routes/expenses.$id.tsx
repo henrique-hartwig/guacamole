@@ -1,4 +1,5 @@
 import { type MetaFunction, type LoaderFunctionArgs } from "@remix-run/node";
+import ExpenseForm from "~/components/expenses/ExpenseForm";
 
 
 export const meta: MetaFunction = () => {
@@ -8,11 +9,13 @@ export const meta: MetaFunction = () => {
   ];
 };
 
+
 export const loader = async ({ params }: LoaderFunctionArgs) => {
   const { id } = params;
   return Response.json({ id });
 };
 
+
 export default function ExpensesId() {
-  return <div>expenses id</div>;
+  return <ExpenseForm />;
 }
