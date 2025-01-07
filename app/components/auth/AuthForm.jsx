@@ -1,6 +1,8 @@
 import { FaLock } from 'react-icons/fa';
+import './styles.css';
 
-function AuthForm() {
+
+export default function AuthForm() {
   return (
     <form method="post" className="form" id="auth-form">
       <div className="icon-img">
@@ -21,5 +23,3 @@ function AuthForm() {
     </form>
   );
 }
-
-export default AuthForm;

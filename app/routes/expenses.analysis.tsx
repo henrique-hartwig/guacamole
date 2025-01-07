@@ -1,4 +1,6 @@
 import type { MetaFunction } from "@remix-run/node";
+import ExpenseStatistics from "~/components/expenses/ExpenseStatistics";
+import Chart from "~/components/expenses/Chart";
 
 
 export const meta: MetaFunction = () => {
@@ -9,5 +11,8 @@ export const meta: MetaFunction = () => {
 };
 
 export default function ExpensesAnalysis() {
-  return <div>expense analysis</div>;
+  return <main>
+    <Chart expenses={[]} />
+    <ExpenseStatistics expenses={[]} />
+  </main>;
 }
